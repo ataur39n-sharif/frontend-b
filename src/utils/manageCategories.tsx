@@ -42,7 +42,7 @@ export const categoryList = categories.map((category, index) => {
         .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
         .join(" ");
     const icon = getIconForCategory(category);
-    const url = `/products/${category}`;
+    const url = `/category/${category}`;
 
     return {
         name,
